@@ -1,0 +1,28 @@
+# Logfile created on Thu Nov 05 22:40:07 +0300 2009SQL (1.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM schema_migrations
+Migrating to CreateGames (20090417195107)
+Migrating to CreatePlayers (20090417195145)
+Migrating to CreateTurns (20090428151959)
+Migrating to CreateRolls (20090501194826)
+Migrating to CreateFaces (20090501194952)
+SQL (0.2ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.2ms)  SELECT version FROM schema_migrations
+SQL (0.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.1ms)  PRAGMA index_list("faces")
+SQL (0.0ms)  PRAGMA index_list("games")
+SQL (0.1ms)  PRAGMA index_list("players")
+SQL (0.0ms)  PRAGMA index_list("rolls")
+SQL (0.1ms)  PRAGMA index_list("turns")
+
+
+Processing GamesController#new (for 127.0.0.1 at 2009-11-05 22:50:04) [GET]
+Rendering template within layouts/application
+Rendering games/new
+Completed in 169ms (View: 167, DB: 0) | 200 OK [http://localhost/]
